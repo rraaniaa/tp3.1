@@ -1,0 +1,83 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="FICHE ÉTUDIANT"
+            android:textSize="24sp" />
+
+        <!-- TextInputLayout for Nom -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout_nom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nom et prénom">
+            <EditText
+                android:id="@+id/editTextNom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:importantForAccessibility="yes" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- TextInputLayout for Date de Naissance -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout_date_naissance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date de Naissance">
+            <EditText
+                android:id="@+id/editTextDateNaissance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:importantForAccessibility="yes" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- TextInputLayout for Email -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email">
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:importantForAccessibility="yes" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Spinner remains the same -->
+        <Spinner
+            android:id="@+id/spinnerClasse"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:hint="Sélectionner la classe" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="381dp"
+            android:layout_height="50dp"
+            android:text="@string/btnNext"
+            android:contentDescription="Passer à la deuxième activité"
+            android:drawableTop="@drawable/add" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

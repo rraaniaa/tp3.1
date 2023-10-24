@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">tp3.1</string>
+    <string name="nom">nom</string>
+    <string name="email">email</string>
+    <string name="dateNais">dateNais</string>
+    <string name="btnNext">btnNext</string>
+</resources>
